@@ -30,34 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BriquettesWeight));
             this.labelWeight = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelWeight
             // 
             this.labelWeight.AutoSize = true;
             this.labelWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelWeight.Location = new System.Drawing.Point(72, 37);
+            this.labelWeight.Location = new System.Drawing.Point(98, 37);
             this.labelWeight.Name = "labelWeight";
-            this.labelWeight.Size = new System.Drawing.Size(0, 52);
+            this.labelWeight.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelWeight.Size = new System.Drawing.Size(0, 36);
             this.labelWeight.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(197, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 52);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "кг";
+            this.labelWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BriquettesWeight
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 103);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelWeight);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -73,7 +63,6 @@
         #endregion
 
         private System.Windows.Forms.Label labelWeight;
-        private System.Windows.Forms.Label label1;
     }
 }
 

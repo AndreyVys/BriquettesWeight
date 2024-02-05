@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+// using System.Collections.Generic;
+// using System.ComponentModel;
+// using System.Data;
+// using System.Drawing;
+// using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+// using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO.Ports;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+// using System.IO.Ports;
+// using System.Xml.Linq;
+// using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Sockets;
-using System.Threading;
-using static System.Net.Mime.MediaTypeNames;
+// using System.Threading;
+// using static System.Net.Mime.MediaTypeNames;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.ComTypes;
+// using System.Runtime.CompilerServices;
+// using System.Runtime.InteropServices.ComTypes;
 
 namespace BriquettesWeight
 {
@@ -43,26 +43,6 @@ namespace BriquettesWeight
         {
             try
             {
-
-
-                //TcpClient tcpClient = new TcpClient();
-                //tcpClient.ConnectAsync("192.168.77.21", 4001);
-                //NetworkStream stream = tcpClient.GetStream();
-                //byte[] data = new byte[512];
-                //var response = new StringBuilder();
-                //string results;
-
-                //do
-                //{
-                //    int len = stream.Read(data, 0, 12);
-                //    response.Append(Encoding.ASCII.GetString(data, 0, len));
-                //    Regex rg = new Regex(@"ww(.*?)kg"); //  = ;
-                //    results = rg.Match(response.ToString()).Groups[1].Value;
-                //}
-
-
-
-
                 Socket mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 mySocket.Connect(server, port);
                 while (true)
@@ -86,8 +66,6 @@ namespace BriquettesWeight
                     result = result.Length > 0 ? result : "0";
                     labelWeight.Text = result;
                     stream.Close();
-                    // Refresh();
-
                 }
             }
             catch (ArgumentNullException e)
